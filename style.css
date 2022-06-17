@@ -1,0 +1,198 @@
+:root {
+    --bg-color-hero: hsl(193, 100%, 96%);
+    --bg-color-footer: hsl(192, 100%, 9%);
+    --bg-color-pink: hsl(322, 100%, 66%);
+    --primary-color: hsl(208, 11%, 55%);
+    --primary-color-white: #fff;
+    --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+}
+p {
+    margin-bottom: 16px;
+    line-height: 150%;
+}
+ul {
+    list-style: none;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+    color: var(--primary-color);
+}
+.logo {
+    max-width: 200px;
+}
+.center {
+    text-align: center;
+}
+.action-btn {
+    font-weight: 700;
+    padding: 1rem 3.5rem;
+    border-radius: 25px;
+}
+.action1 {
+    display: inline-block;
+    padding: 1rem 3.5rem;
+    background-color: var(--bg-color-pink);
+    color: var(--primary-color-white);
+}
+.action2 {
+    padding: 0.8rem 2.5rem;
+    background-color: var(--primary-color-white);
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+.title-case {
+    text-transform: capitalize;
+}
+.top {
+    background-image: url('./images/bg-hero-mobile.svg');
+    background-size: cover;
+    background-color: var(--bg-color-hero);
+    padding-block: 50px;
+    margin-bottom: 100px;
+}
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+
+}
+.hero-text {
+    text-align: center;
+}
+main > div {
+    padding-block: 20px;
+    text-align: center;
+    width: 95%;
+    max-width: 850px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+main img {
+    max-width: 300px;
+}
+main + section {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 20px 10px;
+    background-color: #FFFFFF;
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    position: relative;
+    top: 100px;
+}
+main + section > h2 {
+    color: black;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+footer {
+    padding: 100px 10px 50px 10px;
+    background-color: var(--bg-color-footer);
+}
+footer * {
+    color: var(--primary-color-white);
+}
+footer li {
+    margin-bottom: 20px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer p {
+    margin-bottom: 0;
+}
+.contact-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    max-width: 400px;
+    margin-bottom: 16px;
+}
+.end {
+    text-align: center;
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+@media screen and (min-width: 768px) {
+    .top {
+        background-image: url('./images/bg-hero-desktop.svg');
+        background-size: cover;
+    }
+    .nav-items {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .hero {
+        display: flex;
+        padding-left: 50px;
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hero-text {
+        max-width: 500px;
+        text-align: start;
+    }
+    .hero > img {
+        max-width: 500px;
+    }
+    main > div {
+        text-align: start;
+        padding-left: 50px;
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+    main > div:nth-of-type(odd) {
+        flex-direction: row-reverse;
+    }
+    main + section {
+        top: 100px;
+    }
+    footer {
+        display: flex;
+        padding: 100px 50px;
+        justify-content: space-between;
+    }
+    h1.logo {
+        margin-top: 0px;
+    }
+    .social-icons {
+        justify-content: start;
+    }
+    .end {
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
