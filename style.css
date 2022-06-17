@@ -14,7 +14,7 @@
 h1 {
     margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
-    color: black;
+    color: var(--bg-color-footer);
     font-size: 30px;
     font-weight: 600;
 }
@@ -42,6 +42,9 @@ body {
     padding: 1rem 3.5rem;
     border-radius: 25px;
 }
+.hero .action-btn {
+    margin-bottom: 50px;
+}
 .action1 {
     display: inline-block;
     padding: 1rem 3.5rem;
@@ -49,7 +52,8 @@ body {
     color: var(--primary-color-white);
 }
 .action2 {
-    padding: 0.8rem 2.5rem;
+    padding: 0.8rem 1.5rem;
+    color: var(--bg-color-footer);
     background-color: var(--primary-color-white);
 }
 a {
@@ -73,10 +77,15 @@ img {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
+    padding: 0 10px;
 
 }
 .hero-text {
+    color: var(--bg-color-footer);
+}
+.hero-text, .product-info {
     text-align: center;
+    padding: 0 10px;
 }
 main > div {
     padding-block: 20px;
@@ -104,7 +113,7 @@ main + section {
     top: 100px;
 }
 main + section > h2 {
-    color: black;
+    color: var(--bg-color-footer);
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -140,14 +149,13 @@ footer p {
     justify-content: center;
     gap: 10px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
     .top {
         background-image: url('./images/bg-hero-desktop.svg');
         background-size: cover;
     }
     .nav-items {
-        width: 90%;
-        margin: auto;
+        padding: 0 50px;
         margin-bottom: 50px;
     }
     .hero {
@@ -158,9 +166,13 @@ footer p {
         justify-content: space-between;
         align-items: center;
     }
-    .hero-text {
+    .hero .action-btn {
+        margin-bottom: 0;
+    }
+    .hero-text, .product-info {
         max-width: 500px;
         text-align: start;
+        padding: 0;
     }
     .hero > img {
         max-width: 500px;
